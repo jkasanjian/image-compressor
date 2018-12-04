@@ -2,7 +2,8 @@
 SVDCompressor.py
 Author: Joshua Kasanjian
 Description: Uses Singular Value Decomposition to compress a black
-and white image.
+and white image. Runs main() to run application. Image file must be
+in same directory as this file.
 """
 
 from image import file2image, isgray, image2file, color2gray
