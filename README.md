@@ -1,6 +1,6 @@
 # svd-image-compressor
 
-This Python 3 program can compress a black and white image using singular value decomposition.
+This Python 3 application can compress a black and white image using singular value decomposition.
 
 The image is converted to a matrix with each element having the black intensity value of a pixel,
 and operated on using self implemented Matrix and Vector classes. The program uses image.py to 
