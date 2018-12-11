@@ -53,13 +53,5 @@ def main():
 
         choice = input("\nWould you like to compress another image? (y/n): ")
 
-
-def test():
-    os.chdir("..")
-    d = os.getcwd()
-    d = d + '/images'
-    print(d)
-
-
-main()
-#test()
+        
+main()      #runs program
