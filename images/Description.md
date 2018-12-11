@@ -1,3 +1,3 @@
-Place png images to be compressed here.
+Place png images to be compressed in tthis directory.
 
-Program will place compressed image files here.
+Program will place compressed image files in this directory.
