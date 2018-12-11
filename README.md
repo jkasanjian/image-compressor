@@ -2,7 +2,7 @@
 
 This Python 3 application can compress a png image to a smaller black and white using singular value decomposition.
 
-The image is converted to black in white, then into a matrix with each element having the black intensity value of a pixel,
+The image is converted to black in white (if it isn't already), and then turned into a matrix with each element having the black intensity value of a pixel,
 and operated on using self implemented Matrix and Vector classes. The program uses image.py to 
 convert the png file to pixel values. 
 
