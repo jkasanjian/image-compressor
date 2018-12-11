@@ -6,7 +6,7 @@ overloaded operators and other functions for various calculations.
 """
 
 import numpy, math
-from Vec import Vec
+from compressor.Vec import Vec
 
 """
 Matrix class
