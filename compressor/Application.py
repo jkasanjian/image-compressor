@@ -1,5 +1,7 @@
 import compressor.SVDCalculator as svdC
-import compressor.image
+import os
+import os.path
+import shutil
 
 """
 Application.py
@@ -19,18 +21,22 @@ def main():
 
     choice = ""
     while choice != "n":
+        os.chdir("..")
+        imageDir = os.getcwd() + '/images'  # saves image directory
+        os.chdir(imageDir)  # go to directory with images
+
         file = input("Enter file name (must be .png): ") #TODO: verify image type
         data = svdC.png2graymatrix(file)     # converts image to matrix
         rank = min(data.dim())     # gets rank of matrix
         print("Rank of image matrix:", rank)
 
-        rec = rank/15
+        rec = rank//16
         print("K value must be less than rank. Medium quality:", rec)
         k = int(input("Enter k value: "))
         while k > rank: 
             k = int(input("Please enter a valid number: "))
         print("Working...")
-    
+
         result = svdC.SVD(data, k)   # returns rank k approximation and sigma values
         s = result[1]           # gets list of sigma values
         compressedData = result[0]      # image matrix after compression
@@ -38,11 +44,22 @@ def main():
         error = svdC.calculateError(data, compressedData)    # calculates error between both matrices
 
         newFile = "compressed_" + file
+        os.chdir(imageDir)
         svdC.graymatrix2png(compressedData, newFile)   # creates compressed file
+
         print("\nRank-", k," approximation generated as ", newFile, sep='')           
         print("Cumulative energy of image: %.4f%%" % cE) 
         print("Error between image matrices: %.2f" % error)
 
         choice = input("\nWould you like to compress another image? (y/n): ")
 
+
+def test():
+    os.chdir("..")
+    d = os.getcwd()
+    d = d + '/images'
+    print(d)
+
+
 main()
+#test()
