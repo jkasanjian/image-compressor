@@ -117,3 +117,5 @@ dmypy.json
 *.png
 *.xml
 *.iml
+.DS_Store
+compressor/.DS_Store

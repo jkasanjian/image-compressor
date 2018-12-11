@@ -1,4 +1,5 @@
 import compressor.SVDCalculator as svdC
+import compressor.image
 
 """
 Application.py
@@ -22,7 +23,10 @@ def main():
         data = svdC.png2graymatrix(file)     # converts image to matrix
         rank = min(data.dim())     # gets rank of matrix
         print("Rank of image matrix:", rank)
-        k = int(input("Enter k value (must be less than rank): "))
+
+        rec = rank/15
+        print("K value must be less than rank. Medium quality:", rec)
+        k = int(input("Enter k value: "))
         while k > rank: 
             k = int(input("Please enter a valid number: "))
         print("Working...")
