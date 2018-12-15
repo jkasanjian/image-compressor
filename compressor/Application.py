@@ -1,4 +1,4 @@
-import compressor.SVDCalculator as svdC
+import SVDCalculator as svdC
 import os
 import os.path
 import shutil

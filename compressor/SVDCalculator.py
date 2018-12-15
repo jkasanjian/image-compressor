@@ -5,9 +5,9 @@ Description: Uses Singular Value Decomposition to compress a black
 and white image. 
 """
 
-from compressor.image import file2image, isgray, image2file, color2gray
+from image import file2image, isgray, image2file, color2gray
 import numpy, math
-from compressor.Matrix import Matrix
+from Matrix import Matrix
 
 
 def png2graymatrix(filename):
