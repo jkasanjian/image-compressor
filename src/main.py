@@ -4,25 +4,24 @@ import os.path
 import shutil
 
 """
-Application.py
+main.py
 Author: Joshua Kasanjian
-Description: Code to run application. Run main() to start.
+Description: Code to run program to compress your own png file.
 """
 
 
 def main():
     """
-    Main method where users enter the name of the black and white image
-    file they wish to compress and k value of the approximation. The file
-    must be in the same directory as this file. The function will generate
-    an image for the rank-k approximation in the same directory, and tell
-    the user the cumulative energy and error of the compressed image.
+    Main method where users enter the name of the image file they wish to 
+    compress and k value of the approximation. The file must be in the 
+    data directory. The function will generate an image for the rank-k 
+    approximation in the same directory, and tell the user the cumulative 
+    energy and error of the compressed image.
     """
 
     choice = ""
     while choice != "n":
-        os.chdir("..")
-        imageDir = os.getcwd() + '/images'  # saves image directory
+        imageDir = os.getcwd() + '/data'  # saves image directory
         os.chdir(imageDir)  # go to directory with images
 
         file = input("Enter file name (must be .png): ") #TODO: verify image type
@@ -53,5 +52,7 @@ def main():
 
         choice = input("\nWould you like to compress another image? (y/n): ")
 
-        
-main()      #runs program
+
+
+if __name__ == "__main__":
+    main()      #runs program
