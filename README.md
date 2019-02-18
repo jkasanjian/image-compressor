@@ -19,9 +19,9 @@ Below are some sample images:
 ![](data/rank-20.png)
 ### Original Image
 ![](data/pic.png)
-### Approximation retaining 95% cumulative energy
+### Approximation retaining 95% cumulative energy (rank-23)
 ![](data/pic95.png)
-### Approximation retaining 99% cumulative energy
+### Approximation retaining 99% cumulative energy (rank-94)
 ![](data/pic99.png)
 ## Future Directions
 I plan on creating a WebApp using Flask framework with a user interface, where a user can upload an image
