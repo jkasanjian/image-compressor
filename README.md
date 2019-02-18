@@ -8,7 +8,10 @@ the pixel values are adjusted accordingly to represesnt a black and white image.
 operated on using self implemented Matrix and Vector classes. The program uses image.py to convert the png file to pixel values. 
 
 The image generated is a rank-k approximation of the original image based on a user-entered k value. 
-The higher the k-value, the more detailed the image, the higher the cumulative energy, and the more space it takes up. Attached below are some sample images:
+The higher the k-value, the more detailed the image, the higher the cumulative energy, and the more space it takes up. 
+
+
+Below are some sample images:
 
 ### Original Image:
 ![](data/dog.png)
