@@ -13,15 +13,15 @@ The higher the k-value, the more detailed the image, the higher the cumulative e
 
 Below are some sample images:
 
-### Original Image:
+### Original Image
 ![](data/dog.png)
 ### Rank-20 Approximation
 ![](data/rank-20.png)
-### Original Image:
+### Original Image
 ![](data/pic.png)
-### Approximation retaining 95% cumulative energy:
+### Approximation retaining 95% cumulative energy
 ![](data/pic95.png)
-### Approximation retaining 99% cumulative energy:
+### Approximation retaining 99% cumulative energy
 ![](data/pic99.png)
 ## Future Directions
 I plan on creating a WebApp using Flask framework with a user interface, where a user can upload an image
