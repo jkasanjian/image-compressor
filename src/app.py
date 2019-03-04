@@ -4,7 +4,7 @@ import os.path
 import shutil
 
 """
-main.py
+app.py
 Author: Joshua Kasanjian
 Description: Code to run program to compress your own png file.
 """
